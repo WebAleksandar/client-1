@@ -17,6 +17,7 @@ header{
     flex-direction: column;
     padding-top: 2rem;
     margin-bottom: 100px;
+    z-index: 1;
 }
 ul{
     display: flex;
@@ -192,10 +193,13 @@ nav ul li:hover::after{
     font-size: 18px;
     cursor: pointer;
 }
-.contact-img-div img{
+.contact-img-div{
+    background-image: linear-gradient(rgba(0,0,0,0.9), transparent), url('../img/general/contact.jpg');
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 /* FOOTER */
 footer{
@@ -276,5 +280,24 @@ footer a{
         width: 95%;
         margin-bottom: 20px;
     }
+    .about{
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        gap: 30px;
+    }
+    .line{
+        display: none;
+    }
+    .about h1{
+        font-size: 35px;
+        border-bottom: 1px solid rgba(0,0,0,0.9);
+        padding-bottom: 10px;
+    }
+    .about span{
+        border-bottom: 1px solid rgba(0,0,0,0.9);
+        padding-bottom: 10px;
+    }
+
 
 }
